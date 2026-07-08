@@ -21,7 +21,7 @@ const HeroContent = () => {
         and articles.
       </p>
 
-      <HeroButtons />
+      
     </div>
   );
 };
