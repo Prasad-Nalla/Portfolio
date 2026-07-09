@@ -4,7 +4,7 @@ import About from "./sections/About/About";
 import Skills from "./sections/Skills/Skills";
 import Projects from "./sections/Projects/Projects";
 import DeveloperPresence from "./sections/DeveloperPresence/DeveloperPresence";
-
+import CyberLab from "./sections/CyberLab/CyberLab";
 function App() {
   return (
     <>
@@ -16,6 +16,7 @@ function App() {
         <Skills />
         <Projects />
         <DeveloperPresence />
+        <CyberLab />
       </main>
     </>
   );
