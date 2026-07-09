@@ -7,6 +7,7 @@ import DeveloperPresence from "./sections/DeveloperPresence/DeveloperPresence";
 import CyberLab from "./sections/CyberLab/CyberLab";
 import Contact from "./sections/Contact/Contact";
 import Footer from "./sections/Footer/Footer";
+import Education from "./sections/Education/Education";
 function App() {
   return (
     <>
@@ -15,6 +16,7 @@ function App() {
       <main>
         <Hero />
         <About />
+        <Education/>
         <Skills />
         <Projects />
         <DeveloperPresence />
