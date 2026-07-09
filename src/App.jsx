@@ -6,6 +6,7 @@ import Projects from "./sections/Projects/Projects";
 import DeveloperPresence from "./sections/DeveloperPresence/DeveloperPresence";
 import CyberLab from "./sections/CyberLab/CyberLab";
 import Contact from "./sections/Contact/Contact";
+import Footer from "./sections/Footer/Footer";
 function App() {
   return (
     <>
@@ -19,6 +20,7 @@ function App() {
         <DeveloperPresence />
         <CyberLab />
         <Contact />
+        <Footer />
       </main>
     </>
   );
