@@ -41,7 +41,7 @@ const HeroImage = () => {
           "
         >
           <img
-            src="/images/photo.jpg"
+            src="/images/photo.png"
             alt="Prasad Nalla"
             className="h-full w-full object-cover object-top"
           />
