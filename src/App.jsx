@@ -1,11 +1,13 @@
 import Navbar from "./components/layout/Navbar";
-import Hero from "./sections/Hero";
+import Hero from "./sections/Hero/Hero";
 
 function App() {
   return (
     <>
       <Navbar />
-      <Hero />
+      <main>
+        <Hero />
+      </main>
     </>
   );
 }
