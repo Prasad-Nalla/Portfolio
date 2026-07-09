@@ -1,60 +1,45 @@
-export const presenceData = [
+export const profiles = [
   {
-    title: "Competitive Programming",
-    profiles: [
-      {
-        name: "LeetCode",
-        stats: "200+ Problems Solved",
-        link: "#",
-      },
-      {
-        name: "GeeksforGeeks",
-        stats: "333 Problems Solved",
-        link: "#",
-      },
-      {
-        name: "CodeChef",
-        stats: "Competitive Programming",
-        link: "#",
-      },
-      {
-        name: "HackerRank",
-        stats: "Programming Practice",
-        link: "#",
-      },
-    ],
+    name: "LeetCode",
+    stat: "200+ Problems",
+    logo: "",
+    link: "#",
   },
-
   {
-    title: "Development",
-    profiles: [
-      {
-        name: "GitHub",
-        stats: "10 Repositories",
-        link: "#",
-      },
-    ],
+    name: "GeeksforGeeks",
+    stat: "333+ Problems",
+    logo: "",
+    link: "#",
   },
-
   {
-    title: "Cybersecurity",
-    profiles: [
-      {
-        name: "TryHackMe",
-        stats: "Cybersecurity Labs",
-        link: "#",
-      },
-    ],
+    name: "GitHub",
+    stat: "10+ Repositories",
+    logo: "",
+    link: "#",
   },
-
   {
-    title: "Writing",
-    profiles: [
-      {
-        name: "GeeksforGeeks Articles",
-        stats: "Technical Blogs",
-        link: "#",
-      },
-    ],
+    name: "TryHackMe",
+    stat: "Top 5%",
+    logo: "",
+    link: "#",
+  },
+  {
+    name: "CodeChef",
+    stat: "Practice",
+    logo: "",
+    link: "#",
+  },
+  {
+    name: "HackerRank",
+    stat: "Practice",
+    logo: "",
+    link: "#",
+  },
+  {
+    name: "GFG Articles",
+    stat: "16+ Articles",
+    logo: "",
+    link: "#",
+    wide: true,
   },
 ];
