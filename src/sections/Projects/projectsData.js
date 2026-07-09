@@ -15,7 +15,7 @@ export const projects = [
       "AI"
     ],
 
-    github: "#",
+    github: "https://github.com/Prasad-Nalla/ScriptifyAI",
     live: "#",
   },
 
@@ -35,7 +35,7 @@ export const projects = [
       "Python"
     ],
 
-    github: "#",
+    github: "https://github.com/Prasad-Nalla/VulnX",
     live: "#",
   },
 
@@ -55,7 +55,7 @@ export const projects = [
       "Gemini API"
     ],
 
-    github: "#",
+    github: "https://github.com/Prasad-Nalla/AI-Assistant",
     live: "#",
   },
 ];
