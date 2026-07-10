@@ -38,34 +38,61 @@ const EducationCard = ({ item }) => {
             className="text-orange-500"
           />
         </div>
+<div>
+  <h3 className="text-2xl font-bold">
+    {item.title}
+  </h3>
 
-        <div>
+  <p className="mt-2 text-orange-400 font-medium">
+    {item.degree}
+  </p>
 
-          <h3 className="text-2xl font-bold">
-            {item.title}
-          </h3>
+  <p className="mt-5 text-slate-300">
+    {item.institute}
+  </p>
 
-          <p className="mt-2 text-orange-400">
-            {item.degree}
-          </p>
+  <div className="mt-6 flex flex-wrap gap-4">
+    <span className="rounded-full bg-white/10 px-4 py-2 text-sm">
+      {item.duration}
+    </span>
 
-          <p className="mt-5 text-slate-300">
-            {item.institute}
-          </p>
+    <span className="rounded-full bg-orange-500/15 px-4 py-2 text-sm font-medium text-orange-300">
+      {item.score}
+    </span>
+  </div>
 
-          <div className="mt-6 flex flex-wrap gap-4">
+  <div className="mt-8">
+    <h4 className="mb-4 text-sm font-semibold uppercase tracking-wider text-slate-400">
+      Relevant Coursework
+    </h4>
 
-            <span className="rounded-full bg-white/10 px-4 py-2 text-sm">
-              {item.duration}
-            </span>
-
-            <span className="rounded-full bg-orange-500/15 px-4 py-2 text-sm text-orange-300">
-              {item.score}
-            </span>
-
-          </div>
-
-        </div>
+    <div className="flex flex-wrap gap-3">
+      {item.coursework.map((course) => (
+        <span
+          key={course}
+          className="
+            rounded-full
+            border
+            border-white/10
+            bg-white/5
+            px-4
+            py-2
+            text-sm
+            text-slate-300
+            transition-all
+            duration-300
+            hover:border-orange-500/40
+            hover:text-orange-300
+          "
+        >
+          {course}
+        </span>
+      ))}
+    </div>
+  </div>
+</div>
+       
+        
 
       </div>
     </motion.div>

@@ -8,6 +8,14 @@ export const education = [
     institute: "Vishnu Institute of Technology, Bhimavaram",
     duration: "2023 – 2027",
     score: "CGPA: 9.03",
+    coursework: [
+      "Data Structures & Algorithms",
+      "Operating Systems",
+      "Database Management Systems",
+      "Software Engineering",
+      "Computer Networks",
+      
+    ],
   },
   {
     icon: BookOpen,
@@ -16,6 +24,11 @@ export const education = [
     institute: "Sri Chaitanya Junior College, Amalapuram",
     duration: "2021 – 2023",
     score: "Percentage: 95.6%",
+    coursework: [
+      "Mathematics",
+      "Physics",
+      "Chemistry",
+    ],
   },
   {
     icon: School,
@@ -24,5 +37,10 @@ export const education = [
     institute: "S.S.R.Z.P.P High School",
     duration: "Completed in 2021",
     score: "Percentage: 94.3%",
+    coursework: [
+      "Mathematics",
+      "Science",
+      "English",
+    ],
   },
 ];

@@ -1,8 +1,19 @@
+import { useState } from "react";
 import Container from "../../components/layout/Container";
-import SkillCategory from "./SkillCategory";
-import { skillCategories } from "./skillsData";
+import FilterBar from "./FilterBar";
+import SkillGrid from "./SkillGrid";
+import { skills, filters } from "./skillsData";
 
 const Skills = () => {
+  const [activeFilter, setActiveFilter] = useState("All");
+
+  const filteredSkills =
+    activeFilter === "All"
+      ? skills
+      : skills.filter(
+          (skill) => skill.category === activeFilter
+        );
+
   return (
     <section
       id="skills"
@@ -10,9 +21,9 @@ const Skills = () => {
     >
       <Container>
 
-        <div className="mb-20 text-center">
+        <div className="text-center mb-14">
 
-          <p className="font-semibold uppercase tracking-[0.35em] text-orange-500">
+          <p className="uppercase tracking-[0.35em] text-orange-500 font-semibold">
             Tech Arsenal
           </p>
 
@@ -20,19 +31,20 @@ const Skills = () => {
             Technologies I Work With
           </h2>
 
-          <p className="mx-auto mt-6 max-w-3xl text-lg leading-8 text-slate-400">
-            A collection of technologies, frameworks, databases, tools, and cybersecurity platforms
-            that I use to build modern applications and explore secure systems.
+          <p className="mt-6 text-slate-400 max-w-3xl mx-auto">
+            Technologies, frameworks and cybersecurity tools
+            I use to build scalable applications.
           </p>
 
         </div>
 
-        {skillCategories.map((category) => (
-          <SkillCategory
-            key={category.title}
-            {...category}
-          />
-        ))}
+        <FilterBar
+          filters={filters}
+          activeFilter={activeFilter}
+          setActiveFilter={setActiveFilter}
+        />
+
+        <SkillGrid skills={filteredSkills} />
 
       </Container>
     </section>
