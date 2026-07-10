@@ -4,7 +4,6 @@ export const filters = [
   "Frontend",
   "Backend",
   "Database",
-  "Cybersecurity",
   "Tools",
 ];
 

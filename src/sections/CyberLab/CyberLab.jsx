@@ -1,11 +1,15 @@
+import { useState } from "react";
+import { ShieldCheck } from "lucide-react";
+
 import Container from "../../components/layout/Container";
 import InfoCard from "./InfoCard";
 import ToolAvatar from "./ToolAvatar";
 import InternshipCard from "./InternshipCard";
 import { cyberData } from "./cyberData";
-import { ShieldCheck } from "lucide-react";
 
 const CyberLab = () => {
+  const [showMore, setShowMore] = useState(false);
+
   return (
     <section
       id="cyber-lab"
@@ -15,11 +19,9 @@ const CyberLab = () => {
       <div className="absolute left-1/2 top-0 -translate-x-1/2 w-[700px] h-[700px] rounded-full bg-orange-500/10 blur-[220px]" />
 
       <Container>
-
         {/* ================= Heading ================= */}
 
         <div className="relative text-center mb-12">
-
           <div className="flex justify-center mb-5">
             <ShieldCheck
               size={70}
@@ -43,15 +45,12 @@ const CyberLab = () => {
             <span className="mx-3 text-orange-500">•</span>
             Security Research
           </p>
-
         </div>
 
         {/* ================= Platform ================= */}
 
         <div className="max-w-6xl mx-auto">
-
           <div className="grid md:grid-cols-2 gap-6">
-
             <InfoCard
               title={cyberData.platform.title}
               logo={cyberData.platform.logo}
@@ -64,28 +63,16 @@ const CyberLab = () => {
               logo={cyberData.environment.logo}
               name={cyberData.environment.value}
             />
-
           </div>
-
         </div>
 
         {/* ================= Toolkit ================= */}
 
         <div className="max-w-6xl mx-auto mt-8">
-
-          <div
-            className="
-              rounded-3xl
-              border
-              border-white/10
-              bg-[#0B1220]/70
-              backdrop-blur-xl
-              p-8
-            "
-          >
+          <div className="rounded-3xl border border-white/10 bg-[#0B1220]/70 backdrop-blur-xl p-8">
+            {/* Heading */}
 
             <div className="text-center mb-8">
-
               <p className="uppercase tracking-[0.3em] text-orange-500 text-sm font-semibold">
                 Skillset
               </p>
@@ -95,53 +82,82 @@ const CyberLab = () => {
               </h3>
 
               <p className="mt-3 text-slate-400">
-                Frequently used tools for penetration testing and security assessments.
+                Frequently used tools for penetration testing and security
+                assessments.
               </p>
-
             </div>
 
+            {/* Main Tools */}
+
             <div className="flex flex-wrap justify-center gap-8">
-
               {cyberData.toolkit.map((tool) => (
-
                 <ToolAvatar
                   key={tool.name}
                   logo={tool.logo}
                   name={tool.name}
                   scale={tool.scale}
                 />
-
               ))}
-
             </div>
 
-          </div>
+            {/* Expand Button */}
 
+            <div className="flex justify-center mt-10">
+              <button
+                onClick={() => setShowMore(!showMore)}
+                className="
+                  px-6
+                  py-3
+                  rounded-full
+                  border
+                  border-orange-500/30
+                  bg-orange-500/10
+                  text-orange-400
+                  font-semibold
+                  transition-all
+                  duration-300
+                  hover:bg-orange-500
+                  hover:text-white
+                "
+              >
+                {showMore
+                  ? "View Less ▲"
+                  : "View Complete Toolkit ▼"}
+              </button>
+            </div>
+
+            {/* More Tools */}
+
+            {showMore && (
+              <div className="flex flex-wrap justify-center gap-8 mt-10">
+                {cyberData.moreTools.map((tool) => (
+                  <ToolAvatar
+                    key={tool.name}
+                    logo={tool.logo}
+                    name={tool.name}
+                    scale={tool.scale}
+                  />
+                ))}
+              </div>
+            )}
+          </div>
         </div>
 
         {/* ================= Internships ================= */}
 
         <div className="max-w-6xl mx-auto mt-8">
-
           <div className="grid md:grid-cols-2 gap-6">
-
             {cyberData.internships.map((item) => (
-
               <InternshipCard
                 key={item.title}
                 logo={item.logo}
                 title={item.title}
                 organization={item.organization}
               />
-
             ))}
-
           </div>
-
         </div>
-
       </Container>
-
     </section>
   );
 };

@@ -45,6 +45,17 @@ export const cyberData = {
     },
   ],
 
+  moreTools: [
+    { name: "Hydra", logo: "/logos/hydra.png" },
+    { name: "Gobuster", logo: "/logos/gobuster.png" },
+    { name: "John the Ripper", logo: "/logos/john.png" },
+    { name: "Nikto", logo: "/logos/nikto.png" },
+    { name: "Hashcat", logo: "/logos/hashcat.png" },
+    { name: "Netcat", logo: "/logos/netcat.png" },
+    { name: "Aircrack-ng", logo: "/logos/aircrack.png" },
+    { name: "Enum4linux", logo: "/logos/enum4linux.png" },
+  ],
+
   internships: [
     {
       title: "Ethical Hacking",
