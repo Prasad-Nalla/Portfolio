@@ -1,4 +1,4 @@
-const CyberCard = ({ card }) => {
+const CyberCard = ({ title, children }) => {
   return (
     <div
       className="
@@ -6,31 +6,19 @@ const CyberCard = ({ card }) => {
         border
         border-white/10
         bg-white/5
-        p-8
         backdrop-blur-xl
+        p-8
         transition-all
         duration-300
-        hover:-translate-y-2
         hover:border-orange-500/40
+        hover:shadow-[0_0_30px_rgba(249,115,22,.15)]
       "
     >
-      <h3 className="text-2xl font-bold">
-        {card.title}
+      <h3 className="text-xl font-semibold mb-6">
+        {title}
       </h3>
 
-      {card.value && (
-        <p className="mt-6 text-lg text-orange-400">
-          {card.value}
-        </p>
-      )}
-
-      {card.items && (
-        <ul className="mt-6 space-y-3 text-slate-300">
-          {card.items.map((item) => (
-            <li key={item}>• {item}</li>
-          ))}
-        </ul>
-      )}
+      {children}
     </div>
   );
 };

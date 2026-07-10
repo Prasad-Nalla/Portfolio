@@ -1,91 +1,147 @@
 import Container from "../../components/layout/Container";
-import CyberCard from "./CyberCard";
-import ToolPill from "./ToolPill";
-import { cyberCards, securityTools } from "./cyberData";
+import InfoCard from "./InfoCard";
+import ToolAvatar from "./ToolAvatar";
+import InternshipCard from "./InternshipCard";
+import { cyberData } from "./cyberData";
+import { ShieldCheck } from "lucide-react";
 
 const CyberLab = () => {
   return (
     <section
       id="cyber-lab"
-      className="bg-[#060B16] py-32"
+      className="relative pt-16 pb-20 bg-[#060B16] overflow-hidden"
     >
+      {/* Background Glow */}
+      <div className="absolute left-1/2 top-0 -translate-x-1/2 w-[700px] h-[700px] rounded-full bg-orange-500/10 blur-[220px]" />
+
       <Container>
 
-        {/* Heading */}
+        {/* ================= Heading ================= */}
 
-        <div className="mb-20 text-center">
+        <div className="relative text-center mb-12">
 
-          <p className="uppercase tracking-[0.35em] font-semibold text-orange-500">
+          <div className="flex justify-center mb-5">
+            <ShieldCheck
+              size={70}
+              strokeWidth={1.8}
+              className="text-orange-500"
+            />
+          </div>
+
+          <p className="uppercase tracking-[0.45em] text-orange-500 font-semibold">
             Cyber Lab
           </p>
 
-          <h2 className="mt-5 text-5xl font-bold">
-            Practical Security Learning
+          <h2 className="mt-4 text-6xl md:text-7xl font-bold text-white">
+            Cybersecurity
           </h2>
 
-          <p className="mx-auto mt-6 max-w-3xl text-lg text-slate-400 leading-8">
-            Exploring cybersecurity through hands-on labs,
-            penetration testing practice, vulnerability assessment,
-            and continuous learning.
+          <p className="mt-5 text-lg md:text-xl text-slate-400">
+            Penetration Testing
+            <span className="mx-3 text-orange-500">•</span>
+            CTF
+            <span className="mx-3 text-orange-500">•</span>
+            Security Research
           </p>
 
         </div>
 
-        {/* Top Cards */}
+        {/* ================= Platform ================= */}
 
-        <div className="grid gap-8 md:grid-cols-2">
+        <div className="max-w-6xl mx-auto">
 
-          {cyberCards.slice(0, 2).map((card) => (
-            <CyberCard
-              key={card.title}
-              card={card}
+          <div className="grid md:grid-cols-2 gap-6">
+
+            <InfoCard
+              title={cyberData.platform.title}
+              logo={cyberData.platform.logo}
+              name={cyberData.platform.value}
+              subtitle={cyberData.platform.subtitle}
             />
-          ))}
 
-        </div>
+            <InfoCard
+              title={cyberData.environment.title}
+              logo={cyberData.environment.logo}
+              name={cyberData.environment.value}
+            />
 
-        {/* Toolkit */}
-
-        <div
-          className="
-            my-12
-            rounded-3xl
-            border
-            border-white/10
-            bg-white/5
-            p-10
-            backdrop-blur-xl
-          "
-        >
-          <h3 className="mb-8 text-3xl font-bold">
-            Security Toolkit
-          </h3>
-
-          <div className="flex flex-wrap gap-4">
-            {securityTools.map((tool) => (
-              <ToolPill
-                key={tool}
-                tool={tool}
-              />
-            ))}
           </div>
 
         </div>
 
-        {/* Bottom Cards */}
+        {/* ================= Toolkit ================= */}
 
-        <div className="grid gap-8 md:grid-cols-2">
+        <div className="max-w-6xl mx-auto mt-8">
 
-          {cyberCards.slice(2).map((card) => (
-            <CyberCard
-              key={card.title}
-              card={card}
-            />
-          ))}
+          <div
+            className="
+              rounded-3xl
+              border
+              border-white/10
+              bg-[#0B1220]/70
+              backdrop-blur-xl
+              p-8
+            "
+          >
+
+            <div className="text-center mb-8">
+
+              <p className="uppercase tracking-[0.3em] text-orange-500 text-sm font-semibold">
+                Skillset
+              </p>
+
+              <h3 className="mt-2 text-3xl font-bold text-white">
+                Security Toolkit
+              </h3>
+
+              <p className="mt-3 text-slate-400">
+                Frequently used tools for penetration testing and security assessments.
+              </p>
+
+            </div>
+
+            <div className="flex flex-wrap justify-center gap-8">
+
+              {cyberData.toolkit.map((tool) => (
+
+                <ToolAvatar
+                  key={tool.name}
+                  logo={tool.logo}
+                  name={tool.name}
+                  scale={tool.scale}
+                />
+
+              ))}
+
+            </div>
+
+          </div>
+
+        </div>
+
+        {/* ================= Internships ================= */}
+
+        <div className="max-w-6xl mx-auto mt-8">
+
+          <div className="grid md:grid-cols-2 gap-6">
+
+            {cyberData.internships.map((item) => (
+
+              <InternshipCard
+                key={item.title}
+                logo={item.logo}
+                title={item.title}
+                organization={item.organization}
+              />
+
+            ))}
+
+          </div>
 
         </div>
 
       </Container>
+
     </section>
   );
 };

@@ -2,7 +2,7 @@ export const profiles = [
   {
     name: "LeetCode",
     stat: "200+ Problems",
-    logo: "",
+    logo: "/logos/leetcode.svg",
     link: "#",
   },
   {

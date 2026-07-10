@@ -1,41 +1,63 @@
-export const cyberCards = [
-  {
-    title: "Kali Linux",
-    value: "Primary Security Platform",
+export const cyberData = {
+  platform: {
+    title: "Platform",
+    value: "TryHackMe",
+    subtitle: "Top 5%",
+    logo: "/logos/tryhackme.png",
   },
-  {
-    title: "TryHackMe",
-    value: "Top 5%",
-  },
-  {
-    title: "Security Interests",
-    items: [
-      "Web Application Security",
-      "Network Security",
-      "Penetration Testing",
-      "Vulnerability Assessment",
-    ],
-  },
-  {
-    title: "Currently Learning",
-    items: [
-      "OWASP Top 10",
-      "CTF Challenges",
-      "Secure Coding",
-      "Active Directory",
-    ],
-  },
-];
 
-export const securityTools = [
-  "Nmap",
-  "Hydra",
-  "Metasploit",
-  "Wireshark",
-  "Burp Suite",
-  "Gobuster",
-  "SQLMap",
-  "John the Ripper",
-  "Nikto",
-  "Aircrack-ng",
-];
+  environment: {
+    title: "Environment",
+    value: "Kali Linux",
+    logo: "/logos/kali.png",
+  },
+
+  toolkit: [
+    {
+      name: "Nmap",
+      logo: "/logos/nmap.png",
+      scale: "scale-150",
+    },
+    {
+      name: "Metasploit",
+      logo: "/logos/metasploit.svg",
+      scale: "scale-125",
+    },
+    {
+      name: "Hydra",
+      logo: "/logos/hydra.png",
+      scale: "scale-150",
+    },
+    {
+      name: "Burp Suite",
+      logo: "/logos/burp.png",
+      scale: "scale-150",
+    },
+    {
+      name: "Wireshark",
+      logo: "/logos/wireshark.png",
+      scale: "scale-150",
+    },
+    {
+      name: "SQLMap",
+      logo: "/logos/Sqlmap.png",
+      scale: "scale-150",
+    },
+  ],
+
+  internships: [
+    {
+      title: "Ethical Hacking",
+      subtitle: "Virtual Internship",
+      organization: "EduSkills",
+      logo: "/logos/kali.png",
+    },
+
+    {
+      title: "Palo Alto Networks",
+      subtitle: "Cybersecurity",
+      organization: "Virtual Internship",
+      logo: "/logos/paloalto.png",
+    },
+  ],
+};
