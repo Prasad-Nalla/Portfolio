@@ -16,7 +16,7 @@ export const projects = [
     ],
 
     github: "https://github.com/Prasad-Nalla/ScriptifyAI",
-    live: "#",
+    live: "https://github.com/Prasad-Nalla/ScriptifyAI",
   },
 
   {
@@ -36,7 +36,7 @@ export const projects = [
     ],
 
     github: "https://github.com/Prasad-Nalla/VulnX",
-    live: "#",
+    live: "https://github.com/Prasad-Nalla/VulnX",
   },
 
   {
@@ -56,6 +56,6 @@ export const projects = [
     ],
 
     github: "https://github.com/Prasad-Nalla/AI-Assistant",
-    live: "#",
+    live: "https://github.com/Prasad-Nalla/AI-Assistant",
   },
 ];

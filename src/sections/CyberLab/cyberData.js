@@ -9,7 +9,7 @@ export const cyberData = {
   environment: {
     title: "Environment",
     value: "Kali Linux",
-    logo: "/logos/kali.png",
+    logo: "/logos/kali.svg",
   },
 
   toolkit: [
@@ -61,14 +61,14 @@ export const cyberData = {
       title: "Ethical Hacking",
       subtitle: "Virtual Internship",
       organization: "EduSkills",
-      logo: "/logos/kali.png",
+      logo: "/logos/edu.png",
     },
 
     {
       title: "Palo Alto Networks",
       subtitle: "Cybersecurity",
       organization: "Virtual Internship",
-      logo: "/logos/paloalto.png",
+      logo: "/logos/palo.png",
     },
   ],
 };
