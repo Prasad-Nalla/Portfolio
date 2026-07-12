@@ -13,7 +13,9 @@ const ProjectCard = ({ project, reverse }) => {
       className={`
         grid
         items-center
-        gap-16
+        gap-8
+        sm:gap-12
+        lg:gap-16
         lg:grid-cols-2
         ${reverse ? "lg:[&>*:first-child]:order-2" : ""}
       `}
@@ -27,21 +29,21 @@ const ProjectCard = ({ project, reverse }) => {
       {/* Content */}
       <div>
 
-        <p className="text-sm uppercase tracking-[0.35em] font-semibold text-orange-500">
+        <p className="text-xs sm:text-sm uppercase tracking-[0.35em] font-semibold text-orange-500">
           Featured Project
         </p>
 
-        <h2 className="mt-4 text-4xl font-bold">
+        <h2 className="mt-4 text-2xl sm:text-3xl md:text-4xl font-bold">
           {project.title}
         </h2>
 
-        <p className="mt-6 text-lg leading-8 text-slate-400">
+        <p className="mt-4 sm:mt-6 text-base sm:text-lg leading-7 sm:leading-8 text-slate-400">
           {project.description}
         </p>
 
         <ProjectTech tech={project.tech} />
 
-        <div className="mt-10 flex flex-wrap gap-5">
+        <div className="mt-8 sm:mt-10 flex flex-wrap gap-3 sm:gap-5">
 
           <a
             href={project.live}
@@ -50,19 +52,32 @@ const ProjectCard = ({ project, reverse }) => {
             className="
               inline-flex
               items-center
-              gap-3
+              gap-2
+              sm:gap-3
               rounded-full
               bg-orange-500
-              px-7
-              py-3
+              px-5
+              sm:px-7
+              py-2.5
+              sm:py-3
+              text-sm
+              sm:text-base
               font-medium
               transition-all
               duration-300
               hover:bg-orange-600
+              hover:scale-105
+              focus:outline-none
+              focus:ring-2
+              focus:ring-orange-500
+              focus:ring-offset-2
+              focus:ring-offset-transparent
+              active:scale-95
             "
+            aria-label={`Visit ${project.title} live demo`}
           >
-            <FaExternalLinkAlt />
-            Live Demo
+            <FaExternalLinkAlt aria-hidden="true" />
+            <span>Live Demo</span>
           </a>
 
           <a
@@ -72,21 +87,34 @@ const ProjectCard = ({ project, reverse }) => {
             className="
               inline-flex
               items-center
-              gap-3
+              gap-2
+              sm:gap-3
               rounded-full
               border
               border-white/15
-              px-7
-              py-3
+              px-5
+              sm:px-7
+              py-2.5
+              sm:py-3
+              text-sm
+              sm:text-base
               font-medium
               transition-all
               duration-300
               hover:border-orange-500
               hover:text-orange-500
+              hover:scale-105
+              focus:outline-none
+              focus:ring-2
+              focus:ring-orange-500
+              focus:ring-offset-2
+              focus:ring-offset-transparent
+              active:scale-95
             "
+            aria-label={`View ${project.title} on GitHub`}
           >
-            <FaGithub />
-            GitHub
+            <FaGithub aria-hidden="true" />
+            <span>GitHub</span>
           </a>
 
         </div>

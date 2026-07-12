@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import Container from "./Container";
+import MobileMenu from "./MobileMenu";
 
 const navLinks = [
   { name: "Home", href: "#home" },
@@ -30,33 +31,47 @@ const Navbar = () => {
           ? "border-b border-white/10 bg-slate-900/70 backdrop-blur-xl"
           : "bg-transparent"
       }`}
+      role="banner"
     >
       <Container>
         <div className="flex h-20 items-center justify-between">
           {/* Logo */}
-          <a href="#home" className="text-2xl font-bold text-white">
-            Prasad<span className="text-orange-500">.</span>
+          <a 
+            href="#home" 
+            className="text-2xl font-bold text-white hover:text-orange-500 transition-colors focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-offset-2 focus:ring-offset-transparent rounded"
+            aria-label="Prasad - Home"
+          >
+            Prasad<span className="text-orange-500" aria-hidden="true">.</span>
           </a>
 
           {/* Desktop Navigation */}
-          <nav className="hidden items-center gap-8 md:flex">
+          <nav className="hidden items-center gap-8 md:flex" aria-label="Main navigation">
             {navLinks.map((item) => (
               <a
                 key={item.name}
                 href={item.href}
-                className="group relative text-sm font-medium text-slate-300 transition-colors duration-300 hover:text-white"
+                className="group relative text-sm font-medium text-slate-300 transition-colors duration-300 hover:text-white focus:outline-none focus:ring-2 focus:ring-orange-500 rounded px-2 py-1"
               >
                 {item.name}
 
-                <span className="absolute -bottom-1 left-0 h-0.5 w-0 bg-orange-500 transition-all duration-300 group-hover:w-full"></span>
+                <span 
+                  className="absolute -bottom-1 left-0 h-0.5 w-0 bg-orange-500 transition-all duration-300 group-hover:w-full" 
+                  aria-hidden="true"
+                ></span>
               </a>
             ))}
           </nav>
 
-          {/* Resume Button */}
-          <button className="hidden rounded-xl bg-orange-500 px-5 py-2.5 font-medium text-white transition-all duration-300 hover:scale-105 hover:bg-orange-400 md:block">
+          {/* Resume Button - Desktop */}
+          <button 
+            className="hidden rounded-xl bg-orange-500 px-5 py-2.5 font-medium text-white transition-all duration-300 hover:scale-105 hover:bg-orange-600 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-offset-2 focus:ring-offset-transparent md:block"
+            aria-label="Download resume"
+          >
             Resume
           </button>
+
+          {/* Mobile Menu */}
+          <MobileMenu />
         </div>
       </Container>
     </header>

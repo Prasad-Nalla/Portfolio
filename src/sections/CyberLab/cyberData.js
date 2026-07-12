@@ -20,7 +20,7 @@ export const cyberData = {
     },
     {
       name: "Metasploit",
-      logo: "/logos/metasploit.svg",
+      logo: "/logos/metasploit.png",
       scale: "scale-125",
     },
     {
@@ -48,7 +48,7 @@ export const cyberData = {
   moreTools: [
     { name: "Hydra", logo: "/logos/hydra.png" },
     { name: "Gobuster", logo: "/logos/gobuster.png" },
-    { name: "John the Ripper", logo: "/logos/john.png" },
+    { name: "John the Ripper", logo: "/logos/jtr.png" },
     { name: "Nikto", logo: "/logos/nikto.png" },
     { name: "Hashcat", logo: "/logos/hashcat.png" },
     { name: "Netcat", logo: "/logos/netcat.png" },

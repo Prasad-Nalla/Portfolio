@@ -19,36 +19,42 @@ const HeroImage = () => {
         className="relative"
       >
         {/* Orange Glow */}
-        <div className="absolute inset-0 rounded-full bg-orange-500/20 blur-[80px]" />
+        <div className="absolute inset-0 rounded-full bg-orange-500/20 blur-[60px] sm:blur-[80px]" aria-hidden="true" />
 
         {/* Orange Ring */}
-        <div className="absolute inset-0 rounded-full border border-orange-500/30"></div>
+        <div className="absolute inset-0 rounded-full border border-orange-500/30" aria-hidden="true"></div>
 
         {/* Image */}
         <div
           className="
             relative
-            h-[320px]
-            w-[320px]
+            h-[220px]
+            w-[220px]
+            sm:h-[280px]
+            sm:w-[280px]
+            md:h-[320px]
+            md:w-[320px]
             overflow-hidden
             rounded-full
             border-4
             border-white/10
             bg-[#0E1628]
-            shadow-[0_25px_80px_rgba(255,107,0,.25)]
+            shadow-[0_20px_60px_rgba(255,107,0,.2)] 
+            sm:shadow-[0_25px_80px_rgba(255,107,0,.25)]
             lg:h-[420px]
             lg:w-[420px]
           "
         >
           <img
             src="/images/photo.png"
-            alt="Prasad Nalla"
+            alt="Prasad Nalla - Full Stack Developer"
             className="h-full w-full object-cover object-top"
+            loading="lazy"
           />
         </div>
       </motion.div>
 
-      <div className="mt-8 w-full text-center">
+      <div className="mt-6 sm:mt-8 w-full text-center">
         <HeroRoles />
       </div>
     </motion.div>
