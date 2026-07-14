@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import Container from "./Container";
 import MobileMenu from "./MobileMenu";
+import { Download } from "lucide-react";
 
 const navLinks = [
   { name: "Home", href: "#home" },
@@ -63,12 +64,31 @@ const Navbar = () => {
           </nav>
 
           {/* Resume Button - Desktop */}
-          <button 
-            className="hidden rounded-xl bg-orange-500 px-5 py-2.5 font-medium text-white transition-all duration-300 hover:scale-105 hover:bg-orange-600 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-offset-2 focus:ring-offset-transparent md:block"
-            aria-label="Download resume"
-          >
-            Resume
-          </button>
+          <a
+  href="/resume.pdf"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="
+    hidden
+    md:inline-flex
+    items-center
+    gap-2
+    rounded-xl
+    bg-orange-500
+    px-5
+    py-2.5
+    font-medium
+    text-white
+    transition-all
+    duration-300
+    hover:scale-105
+    hover:bg-orange-600
+    hover:shadow-[0_0_20px_rgba(249,115,22,.4)]
+  "
+>
+  <Download size={18} />
+  Resume
+</a>
 
           {/* Mobile Menu */}
           <MobileMenu />
