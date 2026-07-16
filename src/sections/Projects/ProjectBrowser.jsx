@@ -1,20 +1,13 @@
 const ProjectBrowser = ({ image, title }) => {
   return (
-    <div className="overflow-hidden rounded-3xl border border-white/10 bg-[#101827] shadow-2xl">
+    // <div className="overflow-hidden rounded-3xl border border-white/10 bg-[#101827] shadow-2xl">
 
       <div className="flex items-center justify-between border-b border-white/10 px-5 py-4">
 
-        <div className="flex gap-2">
-          <span className="h-3 w-3 rounded-full bg-red-500"></span>
-          <span className="h-3 w-3 rounded-full bg-yellow-500"></span>
-          <span className="h-3 w-3 rounded-full bg-green-500"></span>
-        </div>
+         
+        
 
-        <div className="rounded-full bg-white/5 px-4 py-1 text-xs text-slate-400">
-          localhost:5173
-        </div>
-
-      </div>
+      {/* </div> */}
 
       {image ? (
         <img

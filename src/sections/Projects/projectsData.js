@@ -25,7 +25,7 @@ export const projects = [
     description:
       "AI-powered vulnerability assessment platform designed to identify security weaknesses, automate scanning workflows, and generate detailed vulnerability reports.",
 
-    image: null,
+    image: "/logos/vulnx.png",
 
     tech: [
       "React",
