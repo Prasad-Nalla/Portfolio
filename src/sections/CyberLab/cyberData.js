@@ -47,13 +47,13 @@ export const cyberData = {
 
   moreTools: [
     { name: "Hydra", logo: "/logos/hydra.png" },
-    { name: "Gobuster", logo: "/logos/gobuster.png" },
+    { name: "Gobuster", logo: "/logos/gobuster.jpg" },
     { name: "John the Ripper", logo: "/logos/jtr.png" },
-    { name: "Nikto", logo: "/logos/nikto.png" },
-    { name: "Hashcat", logo: "/logos/hashcat.png" },
-    { name: "Netcat", logo: "/logos/netcat.png" },
-    { name: "Aircrack-ng", logo: "/logos/aircrack.png" },
-    { name: "Enum4linux", logo: "/logos/enum4linux.png" },
+    { name: "Nikto", logo: "/logos/nikto.jpg" },
+    { name: "Hashcat", logo: "/logos/hashcat.jpg" },
+    { name: "Netcat", logo: "/logos/netcat.jpg" },
+    { name: "Aircrack-ng", logo: "/logos/aircrack.jpg" },
+    { name: "Enum4linux", logo: "/logos/enum4linux.jpg" },
   ],
 
   internships: [
