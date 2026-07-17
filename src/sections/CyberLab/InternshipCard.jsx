@@ -1,4 +1,24 @@
 const InternshipCard = ({ logo, title, organization }) => {
+  const isPalo = logo.includes("palo.png");
+  const isEdu = logo.includes("edu.png");
+
+  let bgStyle = {};
+  let isCustomBg = false;
+  let paddingClass = "p-2";
+  let imgSizeClass = "w-14 h-14";
+
+  if (isPalo) {
+    bgStyle = { backgroundColor: "#FFFFFF" };
+    isCustomBg = true;
+    paddingClass = "p-0";
+    imgSizeClass = "w-full h-full";
+  } else if (isEdu) {
+    bgStyle = { backgroundColor: "#0D619F" };
+    isCustomBg = true;
+    paddingClass = "p-0";
+    imgSizeClass = "w-full h-full";
+  }
+
   return (
     <div
       className="
@@ -39,34 +59,35 @@ const InternshipCard = ({ logo, title, organization }) => {
         {/* Logo */}
 
         <div
-          className="
+          style={bgStyle}
+          className={`
             w-24
             h-24
             rounded-full
-            bg-[#101826]
+            ${isCustomBg ? "" : "bg-[#101826]"}
             border
             border-white/10
             overflow-hidden
             flex
             items-center
             justify-center
+            ${paddingClass}
             transition-all
             duration-300
             group-hover:border-orange-500
             group-hover:shadow-[0_0_25px_rgba(249,115,22,.25)]
-          "
+          `}
         >
           <img
             src={logo}
             alt={title}
-            className="
-              w-14
-              h-14
+            className={`
+              ${imgSizeClass}
               object-contain
               transition-all
               duration-300
               group-hover:scale-110
-            "
+            `}
           />
         </div>
 

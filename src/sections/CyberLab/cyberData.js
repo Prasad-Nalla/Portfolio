@@ -20,7 +20,7 @@ export const cyberData = {
     },
     {
       name: "Metasploit",
-      logo: "/logos/metasploit.png",
+      logo: "/logos/metasploit.svg",
       scale: "scale-125",
     },
     {
@@ -46,14 +46,14 @@ export const cyberData = {
   ],
 
   moreTools: [
-    { name: "Hydra", logo: "/logos/hydra.png" },
-    { name: "Gobuster", logo: "/logos/gobuster.jpg" },
+    { name: "Nessus", logo: "/logos/nessus.png" },
+    { name: "Gobuster", logo: "/logos/gobuster.png" },
     { name: "John the Ripper", logo: "/logos/jtr.png" },
-    { name: "Nikto", logo: "/logos/nikto.jpg" },
+    { name: "Nikto", logo: "/logos/nikto.png" },
     { name: "Hashcat", logo: "/logos/hashcat.jpg" },
-    { name: "Netcat", logo: "/logos/netcat.jpg" },
-    { name: "Aircrack-ng", logo: "/logos/aircrack.jpg" },
-    { name: "Enum4linux", logo: "/logos/enum4linux.jpg" },
+    { name: "Netcat", logo: "/logos/netcat.png" },
+    { name: "Aircrack-ng", logo: "/logos/aircrack.png" },
+    { name: "Enum4linux", logo: "/logos/enum4linux.png" },
   ],
 
   internships: [

@@ -1,0 +1,11 @@
+<svg role="img" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+  <title>Burp Suite</title>
+  <!-- Left half (Grey) -->
+  <path d="M 50 5 L 50 20 L 30 40 L 50 40 L 50 60 L 70 60 L 50 80 L 50 95 A 45 45 0 0 1 50 5 Z" fill="#8C8C8C" />
+  
+  <!-- Right half (Orange) -->
+  <path d="M 50 5 L 50 20 L 30 40 L 50 40 L 50 60 L 70 60 L 50 80 L 50 95 A 45 45 0 0 0 50 5 Z" fill="#FF7A00" />
+  
+  <!-- Divider Squiggle (White) -->
+  <path d="M 50 5 L 50 20 L 30 40 L 50 40 L 50 60 L 70 60 L 50 80 L 50 95" stroke="#FFFFFF" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+</svg>
