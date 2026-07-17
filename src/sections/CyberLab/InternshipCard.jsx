@@ -11,7 +11,7 @@ const InternshipCard = ({ logo, title, organization }) => {
     bgStyle = { backgroundColor: "#FFFFFF" };
     isCustomBg = true;
     paddingClass = "p-0";
-    imgSizeClass = "w-full h-full";
+    imgSizeClass = "w-full h-full scale-[1.35]";
   } else if (isEdu) {
     bgStyle = { backgroundColor: "#0D619F" };
     isCustomBg = true;
@@ -30,7 +30,8 @@ const InternshipCard = ({ logo, title, organization }) => {
         border-white/10
         bg-[#0B1220]/70
         backdrop-blur-xl
-        p-8
+        p-6
+        sm:p-8
         transition-all
         duration-300
         hover:-translate-y-1

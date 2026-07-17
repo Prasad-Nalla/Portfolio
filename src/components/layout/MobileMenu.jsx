@@ -55,9 +55,15 @@ const MobileMenu = () => {
                 {item.name}
               </a>
             ))}
-            <button className="mt-4 w-full rounded-lg bg-orange-500 px-4 py-3 font-medium text-white transition-all duration-300 hover:bg-orange-600">
+            <a
+              href="/resume.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={closeMenu}
+              className="mt-4 w-full text-center rounded-lg bg-orange-500 px-4 py-3 font-medium text-white transition-all duration-300 hover:bg-orange-600"
+            >
               Resume
-            </button>
+            </a>
           </div>
         </nav>
       )}

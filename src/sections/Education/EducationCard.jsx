@@ -20,7 +20,7 @@ const EducationCard = ({ item }) => {
         hover:shadow-[0_20px_60px_rgba(255,107,0,.15)]
       "
     >
-      <div className="flex items-start gap-5">
+      <div className="flex flex-col sm:flex-row items-start gap-5">
 
         <div
           className="
@@ -31,6 +31,7 @@ const EducationCard = ({ item }) => {
             justify-center
             rounded-2xl
             bg-orange-500/15
+            shrink-0
           "
         >
           <Icon

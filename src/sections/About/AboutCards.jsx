@@ -39,8 +39,8 @@ const AboutCards = () => {
             key={card.title}
             className="group rounded-3xl border border-white/10 bg-[#0E1628] p-6 transition-all duration-300 hover:-translate-y-2 hover:border-orange-500/40 hover:bg-[#131f36]"
           >
-            <div className="flex items-start gap-5">
-              <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-orange-500/10 text-orange-500 transition-all duration-300 group-hover:bg-orange-500 group-hover:text-white">
+            <div className="flex flex-col sm:flex-row items-start gap-5">
+              <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-orange-500/10 text-orange-500 transition-all duration-300 group-hover:bg-orange-500 group-hover:text-white shrink-0">
                 <Icon size={28} />
               </div>
 

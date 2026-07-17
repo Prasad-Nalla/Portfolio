@@ -6,7 +6,7 @@ const AboutContent = () => {
         About Me
       </p>
 
-      <h2 className="mt-5 text-5xl font-bold leading-tight">
+      <h2 className="mt-5 text-3xl sm:text-4xl md:text-5xl font-bold leading-tight">
         Building software
         <br />
         that solves

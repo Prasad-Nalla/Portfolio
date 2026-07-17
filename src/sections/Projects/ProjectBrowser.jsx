@@ -13,10 +13,10 @@ const ProjectBrowser = ({ image, title }) => {
         <img
           src={image}
           alt={title}
-          className="h-[350px] w-full object-cover"
+          className="h-[200px] sm:h-[280px] md:h-[350px] w-full object-cover"
         />
       ) : (
-        <div className="flex h-[350px] flex-col items-center justify-center bg-gradient-to-br from-[#101827] to-[#0B1220]">
+        <div className="flex h-[200px] sm:h-[280px] md:h-[350px] flex-col items-center justify-center bg-gradient-to-br from-[#101826] to-[#0B1220]">
 
           <div className="text-6xl font-bold text-orange-500 opacity-20">
             {"</>"}
