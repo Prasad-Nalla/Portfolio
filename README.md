@@ -1,16 +1,68 @@
-# React + Vite
+# 💻 Prasad Nalla | Professional Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to my portfolio! This website showcases my projects, skills, academic background, cybersecurity work (TryHackMe), and developers' profiles (LeetCode, GFG, GitHub, etc.) with real-time statistics integration.
 
-Currently, two official plugins are available:
+Built with a premium dark-themed design system, smooth animations, and a fully mobile-responsive layout.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## 🚀 Key Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+* **Fully Responsive UI:** Adapts beautifully to mobile, tablet, and desktop screens.
+* **Tech Arsenal Section:** Visual categorization and filtering of languages, frameworks, databases, and development tools.
+* **Interactive Project Browser:** Custom mock browser display featuring screenshots and links for project verification.
+* **Developer Presence Profiles:** Links to competitive coding accounts, including live stats badges from LeetCode and TryHackMe.
+* **Virtual Internship Section:** Dedicated cards highlighting experience at EduSkills and Palo Alto Networks, complete with credential verification links.
+* **EmailJS Integrated Contact Form:** Fully functional client-side email delivery system directly to inbox.
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠️ Built With
+
+* **Core Framework:** [React 19](https://react.dev/) + [Vite](https://vite.dev/)
+* **Styling & Responsive Design:** [Tailwind CSS v4](https://tailwindcss.com/)
+* **Animations:** [Framer Motion](https://www.framer.com/motion/)
+* **Icons:** [Lucide React](https://lucide.dev/) & [React Icons](https://react-icons.github.io/react-icons/)
+* **Contact Service:** [@emailjs/browser](https://www.emailjs.com/)
+
+---
+
+## 💻 Local Setup & Development
+
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/Prasad-Nalla/Portfolio.git
+   cd Portfolio
+   ```
+
+2. **Install dependencies:**
+   ```bash
+   npm install
+   ```
+
+3. **Configure Environment Variables:**
+   Create a `.env` or `.env.local` file in the root directory:
+   ```env
+   VITE_EMAILJS_SERVICE_ID=your_emailjs_service_id
+   VITE_EMAILJS_TEMPLATE_ID=your_emailjs_template_id
+   VITE_EMAILJS_PUBLIC_KEY=your_emailjs_public_key
+   ```
+
+4. **Run the development server:**
+   ```bash
+   npm run dev
+   ```
+
+5. **Build for production:**
+   ```bash
+   npm run build
+   ```
+
+---
+
+## 📦 Deployment Suggestions
+
+This project is a static React application ready to be hosted on Vercel or Netlify:
+* Import your GitHub repository.
+* Set the build command to `npm run build` and publish directory to `dist`.
+* Add your `VITE_EMAILJS_` variables under the environment settings.
