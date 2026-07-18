@@ -4,7 +4,7 @@ export const projects = [
     description:
       "AI-powered handwriting generation platform that converts digital documents into realistic handwritten notes with customizable handwriting styles and intelligent formatting.",
 
-    image: null,
+    image: "/logos/script.png",
 
     tech: [
       "React",

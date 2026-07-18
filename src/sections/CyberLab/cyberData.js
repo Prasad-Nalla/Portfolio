@@ -65,9 +65,9 @@ export const cyberData = {
     },
 
     {
-      title: "Palo Alto Networks",
-      subtitle: "Cybersecurity",
-      organization: "Virtual Internship",
+      title: "Cybersecurity",
+      subtitle: "Virtual Internship",
+      organization: "Palo Alto Networks",
       logo: "/logos/palo.png",
     },
   ],
