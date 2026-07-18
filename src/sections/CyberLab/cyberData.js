@@ -62,6 +62,7 @@ export const cyberData = {
       subtitle: "Virtual Internship",
       organization: "EduSkills",
       logo: "/logos/edu.png",
+      certificate: "https://drive.google.com/file/d/18fk17UMAQ-5mq0eHiYHFDv8v8_fs0tSy/view?usp=drivesdk", // Replace with your Google Drive certificate link
     },
 
     {
@@ -69,6 +70,7 @@ export const cyberData = {
       subtitle: "Virtual Internship",
       organization: "Palo Alto Networks",
       logo: "/logos/palo.png",
+      certificate: "https://drive.google.com/file/d/1bKXpRkdPZ6eMdZjNZoQskeWCfCy6B5PL/view?usp=drivesdk", // Replace with your Google Drive certificate link
     },
   ],
 };

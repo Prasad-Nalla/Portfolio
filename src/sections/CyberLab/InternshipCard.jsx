@@ -1,4 +1,6 @@
-const InternshipCard = ({ logo, title, organization }) => {
+import { FiAward } from "react-icons/fi";
+
+const InternshipCard = ({ logo, title, organization, certificate }) => {
   const isPalo = logo.includes("palo.png");
   const isEdu = logo.includes("edu.png");
 
@@ -94,7 +96,7 @@ const InternshipCard = ({ logo, title, organization }) => {
 
         {/* Text */}
 
-        <div className="flex-1">
+        <div className="flex-1 flex flex-col">
 
           <p className="uppercase tracking-[0.3em] text-orange-500 text-xs font-semibold">
             Virtual Internship
@@ -107,6 +109,43 @@ const InternshipCard = ({ logo, title, organization }) => {
           <p className="mt-2 text-slate-400">
             {organization}
           </p>
+
+          {certificate && (
+            <a
+              href={certificate}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="
+                mt-4
+                inline-flex
+                items-center
+                gap-2
+                rounded-xl
+                border
+                border-white/10
+                bg-white/5
+                px-4
+                py-2
+                text-xs
+                font-semibold
+                text-slate-300
+                backdrop-blur-md
+                transition-all
+                duration-300
+                hover:border-orange-500/50
+                hover:bg-orange-500/10
+                hover:text-white
+                hover:shadow-[0_0_15px_rgba(249,115,22,0.1)]
+                focus:outline-none
+                focus:ring-2
+                focus:ring-orange-500/50
+                w-fit
+              "
+            >
+              <FiAward className="text-orange-500" size={14} />
+              <span>Verify Credential</span>
+            </a>
+          )}
 
         </div>
 

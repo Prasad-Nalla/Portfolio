@@ -172,6 +172,7 @@ const CyberLab = () => {
                 logo={item.logo}
                 title={item.title}
                 organization={item.organization}
+                certificate={item.certificate}
               />
             ))}
           </div>

@@ -45,7 +45,7 @@ export const projects = [
     description:
       "Upload PDFs, interact with documents using AI, generate intelligent summaries, and retrieve contextual answers through natural language conversations.",
 
-    image: null,
+    image: "/logos/aiassistant.png",
 
     tech: [
       "React",
