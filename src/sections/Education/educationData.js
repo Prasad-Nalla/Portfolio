@@ -35,7 +35,7 @@ export const education = [
     title: "Secondary School Certificate (SSC)",
     degree: "State Board",
     institute: "S.S.R.Z.P.P High School",
-    duration: "Completed in 2021",
+    duration: "2020 - 2021",
     score: "Percentage: 94.3%",
     coursework: [
       "Mathematics",
