@@ -56,7 +56,7 @@ const MobileMenu = () => {
               </a>
             ))}
             <a
-              href="/resume.pdf"
+              href="./resume.pdf?v=1.0.1"
               target="_blank"
               rel="noopener noreferrer"
               onClick={closeMenu}

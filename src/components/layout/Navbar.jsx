@@ -65,7 +65,7 @@ const Navbar = () => {
 
           {/* Resume Button - Desktop */}
           <a
-  href="/resume.pdf"
+  href="./resume.pdf?v=1.0.1"
   target="_blank"
   rel="noopener noreferrer"
   className="

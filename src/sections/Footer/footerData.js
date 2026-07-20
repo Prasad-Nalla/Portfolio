@@ -25,6 +25,6 @@ export const footerLinks = [
   {
     title: "Resume",
     icon: HiDocumentText,
-    link: "/resume.pdf",
+    link: "./resume.pdf?v=1.0.1",
   },
 ];

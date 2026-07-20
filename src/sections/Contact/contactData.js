@@ -24,6 +24,6 @@ export const contactInfo = [
     title: "Resume",
     value: "Download Resume",
     icon: HiDocumentText,
-    link: "/resume.pdf",
+    link: "./resume.pdf?v=1.0.1",
   },
 ];

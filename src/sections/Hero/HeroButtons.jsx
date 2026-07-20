@@ -33,7 +33,7 @@ const HeroButtons = () => {
 
       {/* Secondary Button */}
       <a
-        href="/resume.pdf"
+        href="./resume.pdf?v=1.0.1"
         target="_blank"
         rel="noopener noreferrer"
         className="group inline-flex items-center gap-2 sm:gap-3 rounded-2xl
