@@ -39,11 +39,13 @@ const ContactForm = () => {
         to_name: "Prasad Nalla",
       };
 
-      await emailjs.send(serviceId, templateId, templateParams, publicKey);
+      await emailjs.send(serviceId, templateId, templateParams, {
+        publicKey: publicKey,
+      });
       setStatus("success");
       setFormData({ name: "", email: "", message: "" });
     } catch (error) {
-      console.error("Failed to send message via EmailJS:", error);
+      console.error("Failed to send message via EmailJS:", error?.text || error?.message || error);
       setStatus("error");
     } finally {
       setIsSending(false);
